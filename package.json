@@ -1,7 +1,7 @@
 {
   "name": "shop-express",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hey hackers ! Your team has been selected by our final client !",
   "main": "server.js",
   "dependencies": {
     "dotenv": "^8.0.0",
@@ -13,9 +13,18 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./server.js -e js,hbs"
+    "dev": "nodemon ./server.js -e js,hbs",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctaveStoufflet/shoelove-course.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OctaveStoufflet/shoelove-course/issues"
+  },
+  "homepage": "https://github.com/OctaveStoufflet/shoelove-course#readme"
 }
