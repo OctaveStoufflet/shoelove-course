@@ -6,10 +6,10 @@ const productSchema = new Schema({
   ref: { type: Number, required: true },
   size: { type: Number, required: true },
   description: { type: String, required: true },
-  price: { type: Number, required: true }
-  // category: { enum: ["Men", "Women", "Kids"] },
+  price: { type: Number, required: true },
+  category: { type: String, enum: ["men", "women", "kids"] },
   // id_tags: [{ type: Schema.Types.ObjectId, ref: "tag" }],
-  // image: { type: String, default: "../public/medias/img/shoe.png" }
+  image: { type: String, default: "/medias/img/shoe.png" }
 });
 
 const sneakerModele = mongoose.model("sneaker", productSchema);

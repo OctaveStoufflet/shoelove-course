@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: calc(100vh - (84px));
-
 }
 .one-product-container > * {
   margin-bottom: 1.2rem;
@@ -24,7 +23,7 @@
 }
 
 .sneak-ref {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   color: rgb(151, 151, 151);
 }
 .sneak-select {
@@ -34,8 +33,8 @@
 
 .shop-cart-icon-page {
   color: white;
-  font-size: .7rem;
-  margin-left: .2rem;
+  font-size: 0.7rem;
+  margin-left: 0.2rem;
 }
 
 .sneak-img-container {
@@ -43,5 +42,5 @@
 }
 
 .sneak-img {
-  width: 100%
+  width: 100%;
 }

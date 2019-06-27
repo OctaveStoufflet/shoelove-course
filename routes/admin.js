@@ -7,8 +7,7 @@ router.get("/prod-add", (req, res) => {
 });
 
 router.post("/prod-add", (req, res) => {
-  const { name, description, ref, size, price } = req.body;
-  console.log(req.body);
+  // const { name, description, ref, size, price } = req.body;
   productModel
     .create(req.body)
     .then(sneaker => res.redirect("/collection"))
@@ -16,10 +15,18 @@ router.post("/prod-add", (req, res) => {
 });
 
 router.get("/prod-manage", (req, res) => {
-  res.render("products_manage");
+  productModel
+    .find()
+    .then(sneakers => {
+      console.log(sneakers);
+      res.render("products_manage", { sneakers });
+    })
+    .catch(err => {
+      console.log(err);
+    });
 });
 
-router.get("/product-edit", (req, res) => {
+router.get("/product_edit", (req, res) => {
   res.render("product_edit");
 });
 

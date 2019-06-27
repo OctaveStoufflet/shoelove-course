@@ -11,32 +11,25 @@
   </aside>
 
   {{!-- PRODUCTS--}}
-  <section class=“products-wrapper”>
-    <div class=“products-infos”>
-      <h4 class=“products-title”>whole collection <span class=“products-count”>(35)</span></h4>
-      <p class=“products-subtitle”>Prepare for your miles with the latest styles and colors of women’s running shoes.
+  <section class="products-wrapper">
+    <div class="products-infos">
+      <h4 class="products-title">whole collection <span class="products-count">(35)</span></h4>
+      <p class="products-subtitle">Prepare for your miles with the latest styles and colors of women’s running shoes.
         Take advantage of signature a footwear technologies including Zoom, Flyknite, and find the
         pairs running shoes that align with your running philosophy.</p>
     </div>
-    <div class=“products-grid flexed-item”>
-      <a href=“/one-product” class=“product-item-wrapper”>
-        {{#unless sneaker}}
-        <p class=“text-block”>sorry, no products yet</p>
-        {{/unless}}
-        {{#if sneaker}}
-        <ul id=“products” class=“list”>
-          {{#each sneaker}}
-          <li class=“item”>
-            <div class=“product-img”><img src=“{{this.image}}” alt=“shoe”></div>
-            <p class=“product-name”>{{ this.name }}</p>
-            <p class=“product-cat”>{{this.category}}</p>
-            <p class=“product-price”>{{this.price}}</p>
-          </li>
-          {{/each}}
-        </ul>
-        {{/if}}
-
+    <div class="products-grid flexed-item">
+      {{#each sneakers}}
+      <a href="/one-product/{{this._id}}" class="product-item-wrapper">
+        <div class="product-img">
+          <img src={{this.image}} alt="shoe">
+        </div>
+        <p class="product-name">{{this.name}}</p>
+        <p class="product-cat">{{this.category}}</p>
+        <p class="product-price">{{this.price}}</p>
       </a>
+      {{/each}}
     </div>
   </section>
+
 </div>

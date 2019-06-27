@@ -3,12 +3,11 @@ aside.category-wrapper {
   padding: 2rem 1.5%;
 }
 
-
 h4.category-title {
   font-size: 1.2rem;
   border-bottom: 1px solid rgb(212, 212, 212);
-  padding-bottom: .8rem;
-  margin-bottom: .8rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
 }
 
 .category-list-item {
@@ -28,7 +27,7 @@ h4.category-title {
 
 h4.products-title {
   font-size: 1.2rem;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .products-count {
@@ -36,7 +35,7 @@ h4.products-title {
 }
 
 .products-subtitle {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: rgb(151, 151, 151);
   max-width: 90%;
   line-height: 1.3;
@@ -46,43 +45,40 @@ h4.products-title {
   flex-wrap: wrap;
 }
 
-
 .product-item-wrapper {
   cursor: pointer;
   width: 20%;
   margin-right: 4%;
   margin-bottom: 4%;
-  transition: all .2s ease-in;
-  transition-property:box-shadow;
+  transition: all 0.2s ease-in;
+  transition-property: box-shadow;
 }
 
 .product-item-wrapper:hover {
   box-shadow: inset 0 -3px 0 0 #111;
 }
 .product-img {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   width: 100%;
 }
 
 .product-img img {
   width: 100%;
-
 }
 
 .product-name {
   font-weight: 600;
-  font-size: .9rem;
-  margin-bottom: .1rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
 }
 
 .product-cat {
   color: rgb(151, 151, 151);
-  font-size: .9rem;
-  margin-bottom: .1rem;
-
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
 }
 
 .product-price {
-  font-size: .9rem;
-  margin-bottom: .5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }
