@@ -1,6 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 const productModel = require("./../models/Product");
+const uploadCloud = require("../config/cloudinary.js");
 
 router.get(["/", "/home"], (req, res) => {
   res.render("index");
