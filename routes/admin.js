@@ -4,7 +4,11 @@ const productModel = require("./../models/Product");
 const uploadCloud = require("../config/cloudinary.js");
 
 router.get("/prod-add", (req, res) => {
-  res.render("products_add");
+  if (req.session.currentUser) {
+    res.render("products_add");
+    return;
+  }
+  res.redirect("/login");
 });
 
 // router.post("/prod-add", (req, res) => {
@@ -39,6 +43,8 @@ router.get("/product_edit/:id", (req, res) => {
 
 router.post("/product_edit/:id", uploadCloud.single("image"), (req, res) => {
   console.log(req.body);
+  const imgUrl = req.file.secure_url;
+  req.body.image = imgUrl;
   productModel
     .findByIdAndUpdate(req.params.id, req.body)
     .then(() => {

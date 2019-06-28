@@ -4,10 +4,13 @@
   "description": "Hey hackers ! Your team has been selected by our final client !",
   "main": "server.js",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "cloudinary": "^1.14.0",
+    "connect-mongo": "^3.0.0",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.1",
     "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "hbs": "^4.0.4",
     "mongoose": "^5.6.1",
     "multer": "^1.4.1",
